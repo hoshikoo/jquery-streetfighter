@@ -27,16 +27,20 @@ $(document).ready(function(){
 		$(".ryu-ready").show();
 	});
 
-	$(document).on("keydown",function(x){
-		if (x.keyCode === 88){
+	$(document).keydown(function(x){
+		if (x.which === 88){
 			$(".ryu-still").hide();
+			$(".ryu-ready").hide();
+		    $(".ryu-throwing").hide();
 		    $(".ryu-cool").show();
 		}
      });
-	$(document).on("keyup",function(x){
-		if (x.keyCode === 88){
+	$(document).keyup(function(x){
+		if (x.which === 88){
 			$(".ryu-still").show();
-		    $(".ryu-cool").hide();
+		    $(".ryu-cool").hide();x
+		    $(".ryu-ready").hide();
+		    $(".ryu-throwing").hide();
 		}
     });
     	
