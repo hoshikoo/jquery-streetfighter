@@ -38,9 +38,12 @@ $(document).ready(function(){
 	$(document).keyup(function(x){
 		if (x.which === 88){
 			$(".ryu-still").show();
-		    $(".ryu-cool").hide();x
+		    $(".ryu-cool").hide();
 		    $(".ryu-ready").hide();
 		    $(".ryu-throwing").hide();
+
+		    $('.ryu').trigger('mouseleave');
+ 	$('.ryu').trigger('mouseenter');
 		}
     });
     	
